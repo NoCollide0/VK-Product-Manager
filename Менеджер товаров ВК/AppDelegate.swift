@@ -6,17 +6,49 @@
 //
 
 import UIKit
+import VKID
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    
+    
+    var vkid: VKID!
+        
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        do {
+            vkid = try VKID(
+                config: Configuration(
+                    appCredentials: AppCredentials(
+                        clientId: VkIdData.clientId,
+                        clientSecret: VkIdData.clientSecret
+                    )
+                )
+            )
+        } catch {
+            preconditionFailure("Failed to initialize VKID: \(error)")
+        }
         return true
     }
-
+    
+    func application(
+        _ app: UIApplication,
+        open url: URL,
+        options: [UIApplication.OpenURLOptionsKey : Any] = [:]
+    ) -> Bool {
+        return self.vkid.open(url: url)
+    }
+    
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        if userActivity.activityType == NSUserActivityTypeBrowsingWeb {
+            if let url = userActivity.webpageURL {
+                print(url)
+                return true
+            }
+        }
+        return false
+    }
+    
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

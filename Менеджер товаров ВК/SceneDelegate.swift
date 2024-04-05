@@ -6,17 +6,40 @@
 //
 
 import UIKit
+import Reachability
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+
+        
+        let newWindow = UIWindow(windowScene: windowScene)
+        self.window = newWindow
+        
+        //Проверяем, есть ли текущая авторизованная сессия VKID
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate,
+           appDelegate.vkid.currentAuthorizedSession != nil  {
+            // Переходим на второй экран, если сессия есть
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            if let groupSelectorViewController = storyboard.instantiateViewController(withIdentifier: "groupSelectorViewController") as? GroupSelectorViewController {
+                newWindow.rootViewController = groupSelectorViewController
+            }
+        } else {
+            //Если сессии нет, загружаем первый экран логина
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            if let initialViewController = storyboard.instantiateInitialViewController() {
+                newWindow.rootViewController = initialViewController
+            }
+        }
+
+        //Делаем новое окно видимым
+        newWindow.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -49,4 +72,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 }
-

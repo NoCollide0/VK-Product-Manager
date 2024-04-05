@@ -7,23 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B27BE952BAC5E0B007662F8 /* GroupSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B27BE942BAC5E0B007662F8 /* GroupSelectorView.swift */; };
+		7B27BE972BAC5E41007662F8 /* GroupSelectorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B27BE962BAC5E41007662F8 /* GroupSelectorModel.swift */; };
+		7B27BE992BAC5E53007662F8 /* GroupSelectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B27BE982BAC5E53007662F8 /* GroupSelectorViewModel.swift */; };
+		7B2850B42BB3154900820866 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2850B32BB3154900820866 /* MainScreenView.swift */; };
+		7B2850B62BB3156000820866 /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2850B52BB3156000820866 /* MainScreenViewModel.swift */; };
+		7B2850B82BB3156F00820866 /* MainScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2850B72BB3156F00820866 /* MainScreenModel.swift */; };
+		7B6452222BA9A85800931197 /* VkIdData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6452212BA9A85800931197 /* VkIdData.swift */; };
+		7B6452242BA9AC9200931197 /* LoginScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6452232BA9AC9200931197 /* LoginScreenViewModel.swift */; };
+		7BA258412BBC876A006DBB7D /* ProductScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA258402BBC876A006DBB7D /* ProductScreenView.swift */; };
+		7BA258432BBC883A006DBB7D /* ProductScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA258422BBC883A006DBB7D /* ProductScreenModel.swift */; };
+		7BA258452BBC8851006DBB7D /* ProductScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA258442BBC8851006DBB7D /* ProductScreenViewModel.swift */; };
+		7BA2584C2BBD1A77006DBB7D /* loadAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 7BA2584B2BBD1A77006DBB7D /* loadAnimation.json */; };
+		7BA2584E2BBD35EB006DBB7D /* NoInternetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA2584D2BBD35EB006DBB7D /* NoInternetView.swift */; };
+		7BA258512BBE7CFB006DBB7D /* ExelScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA258502BBE7CFB006DBB7D /* ExelScreenView.swift */; };
+		7BA258532BBE7D1A006DBB7D /* ExelScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA258522BBE7D1A006DBB7D /* ExelScreenModel.swift */; };
+		7BA258552BBE7D37006DBB7D /* ExelScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA258542BBE7D37006DBB7D /* ExelScreenViewModel.swift */; };
+		7BA368FD2BBF7376008F9351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BA3DD642BA7298F00E15204 /* Assets.xcassets */; };
 		7BA3DD5C2BA7298900E15204 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA3DD5B2BA7298900E15204 /* AppDelegate.swift */; };
 		7BA3DD5E2BA7298900E15204 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA3DD5D2BA7298900E15204 /* SceneDelegate.swift */; };
-		7BA3DD602BA7298900E15204 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA3DD5F2BA7298900E15204 /* ViewController.swift */; };
+		7BA3DD602BA7298900E15204 /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA3DD5F2BA7298900E15204 /* LoginScreenView.swift */; };
 		7BA3DD632BA7298A00E15204 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BA3DD612BA7298900E15204 /* Main.storyboard */; };
-		7BA3DD652BA7298F00E15204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BA3DD642BA7298F00E15204 /* Assets.xcassets */; };
 		7BA3DD682BA7298F00E15204 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BA3DD662BA7298F00E15204 /* LaunchScreen.storyboard */; };
+		7BD475822BAE059300A2282F /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD475802BAE059300A2282F /* GroupTableViewCell.swift */; };
+		7BD475832BAE059300A2282F /* GroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BD475812BAE059300A2282F /* GroupTableViewCell.xib */; };
+		7BDD85702BB4D34E00242149 /* GroupAlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDD856E2BB4D34E00242149 /* GroupAlbumCell.swift */; };
+		7BDD85712BB4D34E00242149 /* GroupAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BDD856F2BB4D34E00242149 /* GroupAlbumCell.xib */; };
+		7BDD85742BB4D36B00242149 /* GroupProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDD85722BB4D36B00242149 /* GroupProductCell.swift */; };
+		7BDD85752BB4D36B00242149 /* GroupProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BDD85732BB4D36B00242149 /* GroupProductCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3ADE2DA8F4D1D48C78A31F9B /* Pods____________________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods____________________.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B27BE942BAC5E0B007662F8 /* GroupSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSelectorView.swift; sourceTree = "<group>"; };
+		7B27BE962BAC5E41007662F8 /* GroupSelectorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSelectorModel.swift; sourceTree = "<group>"; };
+		7B27BE982BAC5E53007662F8 /* GroupSelectorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSelectorViewModel.swift; sourceTree = "<group>"; };
+		7B2850B32BB3154900820866 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		7B2850B52BB3156000820866 /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		7B2850B72BB3156F00820866 /* MainScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModel.swift; sourceTree = "<group>"; };
+		7B6452212BA9A85800931197 /* VkIdData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkIdData.swift; sourceTree = "<group>"; };
+		7B6452232BA9AC9200931197 /* LoginScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewModel.swift; sourceTree = "<group>"; };
+		7BA258402BBC876A006DBB7D /* ProductScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductScreenView.swift; sourceTree = "<group>"; };
+		7BA258422BBC883A006DBB7D /* ProductScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductScreenModel.swift; sourceTree = "<group>"; };
+		7BA258442BBC8851006DBB7D /* ProductScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductScreenViewModel.swift; sourceTree = "<group>"; };
+		7BA2584B2BBD1A77006DBB7D /* loadAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loadAnimation.json; sourceTree = "<group>"; };
+		7BA2584D2BBD35EB006DBB7D /* NoInternetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetView.swift; sourceTree = "<group>"; };
+		7BA258502BBE7CFB006DBB7D /* ExelScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExelScreenView.swift; sourceTree = "<group>"; };
+		7BA258522BBE7D1A006DBB7D /* ExelScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExelScreenModel.swift; sourceTree = "<group>"; };
+		7BA258542BBE7D37006DBB7D /* ExelScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExelScreenViewModel.swift; sourceTree = "<group>"; };
 		7BA3DD582BA7298900E15204 /* Менеджер товаров ВК.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Менеджер товаров ВК.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BA3DD5B2BA7298900E15204 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BA3DD5D2BA7298900E15204 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7BA3DD5F2BA7298900E15204 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7BA3DD5F2BA7298900E15204 /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
 		7BA3DD622BA7298900E15204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BA3DD642BA7298F00E15204 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BA3DD672BA7298F00E15204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BA3DD692BA7298F00E15204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BD475802BAE059300A2282F /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
+		7BD475812BAE059300A2282F /* GroupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupTableViewCell.xib; sourceTree = "<group>"; };
+		7BDD856E2BB4D34E00242149 /* GroupAlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAlbumCell.swift; sourceTree = "<group>"; };
+		7BDD856F2BB4D34E00242149 /* GroupAlbumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupAlbumCell.xib; sourceTree = "<group>"; };
+		7BDD85722BB4D36B00242149 /* GroupProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupProductCell.swift; sourceTree = "<group>"; };
+		7BDD85732BB4D36B00242149 /* GroupProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupProductCell.xib; sourceTree = "<group>"; };
+		D2DDF3967F77FF6A01E64AF5 /* Pods-Менеджер товаров ВК.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Менеджер товаров ВК.release.xcconfig"; path = "Target Support Files/Pods-Менеджер товаров ВК/Pods-Менеджер товаров ВК.release.xcconfig"; sourceTree = "<group>"; };
+		DCA3F7490CC49D0B747E62A0 /* Pods-Менеджер товаров ВК.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Менеджер товаров ВК.debug.xcconfig"; path = "Target Support Files/Pods-Менеджер товаров ВК/Pods-Менеджер товаров ВК.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,11 +84,90 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B27BE932BAC5DE6007662F8 /* GroupSelector */ = {
+			isa = PBXGroup;
+			children = (
+				7B27BE962BAC5E41007662F8 /* GroupSelectorModel.swift */,
+				7B27BE942BAC5E0B007662F8 /* GroupSelectorView.swift */,
+				7B27BE982BAC5E53007662F8 /* GroupSelectorViewModel.swift */,
+				7B27BE9A2BADD0F8007662F8 /* TableViewCell */,
+			);
+			path = GroupSelector;
+			sourceTree = "<group>";
+		};
+		7B27BE9A2BADD0F8007662F8 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7BD475802BAE059300A2282F /* GroupTableViewCell.swift */,
+				7BD475812BAE059300A2282F /* GroupTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		7B2850B22BB3150100820866 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7B2850B72BB3156F00820866 /* MainScreenModel.swift */,
+				7B2850B32BB3154900820866 /* MainScreenView.swift */,
+				7B2850B52BB3156000820866 /* MainScreenViewModel.swift */,
+				7BDD856B2BB4D28400242149 /* GroupAlbumCell */,
+				7BDD856D2BB4D2ED00242149 /* GroupProductCell */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		7B64521D2BA8A23A00931197 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7BA3DD662BA7298F00E15204 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		7B6452202BA8BD2B00931197 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7BA3DD5F2BA7298900E15204 /* LoginScreenView.swift */,
+				7B6452232BA9AC9200931197 /* LoginScreenViewModel.swift */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		7BA2583F2BBC86A0006DBB7D /* ProductScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7BA258422BBC883A006DBB7D /* ProductScreenModel.swift */,
+				7BA258402BBC876A006DBB7D /* ProductScreenView.swift */,
+				7BA258442BBC8851006DBB7D /* ProductScreenViewModel.swift */,
+			);
+			path = ProductScreen;
+			sourceTree = "<group>";
+		};
+		7BA258462BBD1198006DBB7D /* LottieAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				7BA2584B2BBD1A77006DBB7D /* loadAnimation.json */,
+			);
+			path = LottieAnimations;
+			sourceTree = "<group>";
+		};
+		7BA2584F2BBE7CC8006DBB7D /* ExelScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7BA258522BBE7D1A006DBB7D /* ExelScreenModel.swift */,
+				7BA258502BBE7CFB006DBB7D /* ExelScreenView.swift */,
+				7BA258542BBE7D37006DBB7D /* ExelScreenViewModel.swift */,
+			);
+			path = ExelScreen;
+			sourceTree = "<group>";
+		};
 		7BA3DD4F2BA7298900E15204 = {
 			isa = PBXGroup;
 			children = (
 				7BA3DD5A2BA7298900E15204 /* Менеджер товаров ВК */,
 				7BA3DD592BA7298900E15204 /* Products */,
+				BD67D026DB9B5CFDE6629B9A /* Pods */,
+				BA0B954E0F69CD2B6847ED02 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +184,55 @@
 			children = (
 				7BA3DD5B2BA7298900E15204 /* AppDelegate.swift */,
 				7BA3DD5D2BA7298900E15204 /* SceneDelegate.swift */,
-				7BA3DD5F2BA7298900E15204 /* ViewController.swift */,
+				7B6452212BA9A85800931197 /* VkIdData.swift */,
+				7B6452202BA8BD2B00931197 /* LoginScreen */,
+				7B27BE932BAC5DE6007662F8 /* GroupSelector */,
+				7B2850B22BB3150100820866 /* MainScreen */,
+				7BA2583F2BBC86A0006DBB7D /* ProductScreen */,
+				7BA2584F2BBE7CC8006DBB7D /* ExelScreen */,
 				7BA3DD612BA7298900E15204 /* Main.storyboard */,
 				7BA3DD642BA7298F00E15204 /* Assets.xcassets */,
-				7BA3DD662BA7298F00E15204 /* LaunchScreen.storyboard */,
+				7BA258462BBD1198006DBB7D /* LottieAnimations */,
+				7B64521D2BA8A23A00931197 /* LaunchScreen */,
 				7BA3DD692BA7298F00E15204 /* Info.plist */,
+				7BA2584D2BBD35EB006DBB7D /* NoInternetView.swift */,
 			);
 			path = "Менеджер товаров ВК";
+			sourceTree = "<group>";
+		};
+		7BDD856B2BB4D28400242149 /* GroupAlbumCell */ = {
+			isa = PBXGroup;
+			children = (
+				7BDD856E2BB4D34E00242149 /* GroupAlbumCell.swift */,
+				7BDD856F2BB4D34E00242149 /* GroupAlbumCell.xib */,
+			);
+			path = GroupAlbumCell;
+			sourceTree = "<group>";
+		};
+		7BDD856D2BB4D2ED00242149 /* GroupProductCell */ = {
+			isa = PBXGroup;
+			children = (
+				7BDD85722BB4D36B00242149 /* GroupProductCell.swift */,
+				7BDD85732BB4D36B00242149 /* GroupProductCell.xib */,
+			);
+			path = GroupProductCell;
+			sourceTree = "<group>";
+		};
+		BA0B954E0F69CD2B6847ED02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3ADE2DA8F4D1D48C78A31F9B /* Pods____________________.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD67D026DB9B5CFDE6629B9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCA3F7490CC49D0B747E62A0 /* Pods-Менеджер товаров ВК.debug.xcconfig */,
+				D2DDF3967F77FF6A01E64AF5 /* Pods-Менеджер товаров ВК.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +242,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BA3DD6C2BA7298F00E15204 /* Build configuration list for PBXNativeTarget "Менеджер товаров ВК" */;
 			buildPhases = (
+				AC918150AE00E4B8FC29F7C9 /* [CP] Check Pods Manifest.lock */,
 				7BA3DD542BA7298900E15204 /* Sources */,
 				7BA3DD552BA7298900E15204 /* Frameworks */,
 				7BA3DD562BA7298900E15204 /* Resources */,
+				B28ED51C599ABDD2E1014518 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,21 +296,85 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BA3DD682BA7298F00E15204 /* LaunchScreen.storyboard in Resources */,
-				7BA3DD652BA7298F00E15204 /* Assets.xcassets in Resources */,
+				7BDD85752BB4D36B00242149 /* GroupProductCell.xib in Resources */,
+				7BDD85712BB4D34E00242149 /* GroupAlbumCell.xib in Resources */,
+				7BA2584C2BBD1A77006DBB7D /* loadAnimation.json in Resources */,
+				7BA368FD2BBF7376008F9351 /* Assets.xcassets in Resources */,
+				7BD475832BAE059300A2282F /* GroupTableViewCell.xib in Resources */,
 				7BA3DD632BA7298A00E15204 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AC918150AE00E4B8FC29F7C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Менеджер товаров ВК-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B28ED51C599ABDD2E1014518 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Менеджер товаров ВК/Pods-Менеджер товаров ВК-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Менеджер товаров ВК/Pods-Менеджер товаров ВК-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Менеджер товаров ВК/Pods-Менеджер товаров ВК-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7BA3DD542BA7298900E15204 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BA3DD602BA7298900E15204 /* ViewController.swift in Sources */,
+				7BA258552BBE7D37006DBB7D /* ExelScreenViewModel.swift in Sources */,
+				7BA258512BBE7CFB006DBB7D /* ExelScreenView.swift in Sources */,
+				7BDD85702BB4D34E00242149 /* GroupAlbumCell.swift in Sources */,
+				7B27BE972BAC5E41007662F8 /* GroupSelectorModel.swift in Sources */,
+				7B2850B62BB3156000820866 /* MainScreenViewModel.swift in Sources */,
+				7B2850B82BB3156F00820866 /* MainScreenModel.swift in Sources */,
+				7B2850B42BB3154900820866 /* MainScreenView.swift in Sources */,
+				7BA258432BBC883A006DBB7D /* ProductScreenModel.swift in Sources */,
+				7BA258532BBE7D1A006DBB7D /* ExelScreenModel.swift in Sources */,
+				7B27BE992BAC5E53007662F8 /* GroupSelectorViewModel.swift in Sources */,
+				7BA3DD602BA7298900E15204 /* LoginScreenView.swift in Sources */,
+				7BA2584E2BBD35EB006DBB7D /* NoInternetView.swift in Sources */,
+				7B27BE952BAC5E0B007662F8 /* GroupSelectorView.swift in Sources */,
+				7BA258452BBC8851006DBB7D /* ProductScreenViewModel.swift in Sources */,
+				7B6452222BA9A85800931197 /* VkIdData.swift in Sources */,
+				7BDD85742BB4D36B00242149 /* GroupProductCell.swift in Sources */,
 				7BA3DD5C2BA7298900E15204 /* AppDelegate.swift in Sources */,
+				7B6452242BA9AC9200931197 /* LoginScreenViewModel.swift in Sources */,
 				7BA3DD5E2BA7298900E15204 /* SceneDelegate.swift in Sources */,
+				7BA258412BBC876A006DBB7D /* ProductScreenView.swift in Sources */,
+				7BD475822BAE059300A2282F /* GroupTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +434,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -260,6 +495,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -282,25 +518,32 @@
 		};
 		7BA3DD6D2BA7298F00E15204 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCA3F7490CC49D0B747E62A0 /* Pods-Менеджер товаров ВК.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "Менеджер товаров ВК/Менеджер товаров ВК.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W89H83NZTM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Менеджер товаров ВК/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Менеджер товаров Вк";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "FS.-------------------";
+				PRODUCT_BUNDLE_IDENTIFIER = FS.myVkProductManagerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -310,25 +553,32 @@
 		};
 		7BA3DD6E2BA7298F00E15204 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2DDF3967F77FF6A01E64AF5 /* Pods-Менеджер товаров ВК.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "Менеджер товаров ВК/Менеджер товаров ВК.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W89H83NZTM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Менеджер товаров ВК/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Менеджер товаров Вк";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "FS.-------------------";
+				PRODUCT_BUNDLE_IDENTIFIER = FS.myVkProductManagerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

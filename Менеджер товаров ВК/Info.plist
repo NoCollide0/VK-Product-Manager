@@ -2,6 +2,30 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>auth_callback</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>https://raw.githubusercontent.com/NoCollide0/apple-app-site-association-myVkApp/main/apple-app-site-association</string>
+				<string>vk51879459</string>
+			</array>
+		</dict>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>vkauthorize-silent</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -21,5 +45,9 @@
 			</array>
 		</dict>
 	</dict>
+	<key>com.apple.developer.associated-domains</key>
+	<array>
+		<string>applinks:raw.githubusercontent.com, vk51879459, www.raw.githubusercontent.com, githubusercontent.com</string>
+	</array>
 </dict>
 </plist>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="albumCell" id="gTV-IL-0wX" customClass="GroupAlbumCell" customModule="Менеджер_товаров_ВК" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUf-4L-PMq">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="albumCellBackground" translatesAutoresizingMaskIntoConstraints="NO" id="mH7-Yo-Uce">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DgQ-gH-7EY">
+                                <rect key="frame" x="26" y="45.666666666666657" width="148" height="109"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ВСЕ ТОВАРЫ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fx8-aa-zhc">
+                                        <rect key="frame" x="10" y="0.0" width="128" height="109"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95294117647058818" green="0.94901960784313721" blue="0.94901960784313721" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Fx8-aa-zhc" firstAttribute="leading" secondItem="DgQ-gH-7EY" secondAttribute="leading" constant="10" id="2i5-9W-R3k"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fx8-aa-zhc" secondAttribute="bottom" id="6Iu-18-Ae8"/>
+                                    <constraint firstItem="Fx8-aa-zhc" firstAttribute="top" secondItem="DgQ-gH-7EY" secondAttribute="top" id="c3U-Be-q5J"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fx8-aa-zhc" secondAttribute="trailing" constant="10" id="yfQ-Wd-f77"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mH7-Yo-Uce" secondAttribute="trailing" id="JwB-Bu-DID"/>
+                            <constraint firstAttribute="width" constant="200" id="Nzt-gg-gfm"/>
+                            <constraint firstItem="DgQ-gH-7EY" firstAttribute="top" secondItem="YUf-4L-PMq" secondAttribute="top" constant="45.5" id="Vbc-7P-XDE"/>
+                            <constraint firstAttribute="trailing" secondItem="DgQ-gH-7EY" secondAttribute="trailing" constant="26" id="XiN-Rk-T7X"/>
+                            <constraint firstAttribute="bottom" secondItem="mH7-Yo-Uce" secondAttribute="bottom" id="cZV-EI-nO9"/>
+                            <constraint firstAttribute="height" constant="200" id="e4s-1y-7Yw"/>
+                            <constraint firstItem="mH7-Yo-Uce" firstAttribute="top" secondItem="YUf-4L-PMq" secondAttribute="top" id="oGg-Rd-Rhj"/>
+                            <constraint firstItem="mH7-Yo-Uce" firstAttribute="leading" secondItem="YUf-4L-PMq" secondAttribute="leading" id="uMs-Tz-QWr"/>
+                            <constraint firstItem="DgQ-gH-7EY" firstAttribute="leading" secondItem="YUf-4L-PMq" secondAttribute="leading" constant="26" id="w7k-Pk-m8f"/>
+                            <constraint firstAttribute="bottom" secondItem="DgQ-gH-7EY" secondAttribute="bottom" constant="45.5" id="zhX-uN-FvT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="YUf-4L-PMq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="O9k-d3-Hyh"/>
+                <constraint firstAttribute="trailing" secondItem="YUf-4L-PMq" secondAttribute="trailing" id="Tsw-Do-HNa"/>
+                <constraint firstAttribute="bottom" secondItem="YUf-4L-PMq" secondAttribute="bottom" id="beA-Ie-ln4"/>
+                <constraint firstItem="YUf-4L-PMq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gmU-Wk-PlU"/>
+            </constraints>
+            <connections>
+                <outlet property="albumName" destination="Fx8-aa-zhc" id="sen-3W-Lz9"/>
+                <outlet property="mainView" destination="YUf-4L-PMq" id="IPw-p9-zUh"/>
+                <outlet property="subView" destination="DgQ-gH-7EY" id="Vbf-5T-HDz"/>
+            </connections>
+            <point key="canvasLocation" x="0.0" y="-11.267605633802818"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="albumCellBackground" width="400" height="400"/>
+    </resources>
+</document>

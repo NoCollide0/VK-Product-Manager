@@ -1,19 +1,21 @@
 //
-//  ViewController.swift
+//  NoInternetView.swift
 //  Менеджер товаров ВК
 //
-//  Created by Федор Шашков on 17.03.2024.
+//  Created by Федор Шашков on 03.04.2024.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class NoInternetViewController: UIViewController {
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         // Do any additional setup after loading the view.
     }
-
-
+    
+    
 }
-
