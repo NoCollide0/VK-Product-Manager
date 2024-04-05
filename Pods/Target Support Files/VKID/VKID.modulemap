@@ -1,0 +1,6 @@
+framework module VKID {
+  umbrella header "VKID-umbrella.h"
+
+  export *
+  module * { export * }
+}

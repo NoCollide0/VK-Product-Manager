@@ -1,0 +1,6 @@
+framework module VKIDCore {
+  umbrella header "VKIDCore-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods____________________ {
+  umbrella header "Pods-Менеджер товаров ВК-umbrella.h"
+
+  export *
+  module * { export * }
+}

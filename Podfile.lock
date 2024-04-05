@@ -1,0 +1,42 @@
+PODS:
+  - libxlsxwriter (1.1.5)
+  - lottie-ios (4.4.1)
+  - Reachability (3.7.5)
+  - Realm (10.48.1):
+    - Realm/Headers (= 10.48.1)
+  - Realm/Headers (10.48.1)
+  - RealmSwift (10.48.1):
+    - Realm (= 10.48.1)
+  - VKID (1.3.0):
+    - VKIDCore (= 1.3.0)
+  - VKIDCore (1.3.0)
+
+DEPENDENCIES:
+  - libxlsxwriter (~> 1.1)
+  - lottie-ios (~> 4.4)
+  - Reachability (~> 3.7)
+  - RealmSwift (~> 10.48)
+  - VKID (~> 1.0)
+
+SPEC REPOS:
+  trunk:
+    - libxlsxwriter
+    - lottie-ios
+    - Reachability
+    - Realm
+    - RealmSwift
+    - VKID
+    - VKIDCore
+
+SPEC CHECKSUMS:
+  libxlsxwriter: 07cdc00cf0edb30ce9773efbbb49a03459a6e0f0
+  lottie-ios: e047b1d2e6239b787cc5e9755b988869cf190494
+  Reachability: 44d15955cdaee6cef699877e1f6647dd6f6698cc
+  Realm: 0a97896f14bac20f01c149f5d9c5b04a3f69240d
+  RealmSwift: c37a89ddbeab328d9d77ae7b7041441e2e51ae1e
+  VKID: e9368724be40f076b670527c6cf0c8568a927930
+  VKIDCore: 7256465fb55db8c5e6b508e7ee636741de2594f2
+
+PODFILE CHECKSUM: aa72975e2b348092afee460be72f6457308f2e37
+
+COCOAPODS: 1.14.2
