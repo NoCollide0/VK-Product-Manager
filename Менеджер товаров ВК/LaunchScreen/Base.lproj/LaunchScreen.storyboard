@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,21 +14,28 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tVy-wg-4xq">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="7t6-KI-MKD"/>
+                                </constraints>
+                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background01" translatesAutoresizingMaskIntoConstraints="NO" id="7Be-tm-mq9">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="921"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo01" translatesAutoresizingMaskIntoConstraints="NO" id="N2G-G8-ikS">
-                                <rect key="frame" x="159" y="325" width="96" height="86"/>
+                                <rect key="frame" x="167" y="423" width="96" height="86"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="86.079999999999998" id="Jlp-Sx-fFz"/>
                                     <constraint firstAttribute="width" constant="96" id="xUq-LB-XMZ"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubbles_background" translatesAutoresizingMaskIntoConstraints="NO" id="WH7-cH-rCZ">
-                                <rect key="frame" x="291" y="39" width="99" height="115"/>
+                                <rect key="frame" x="307" y="39" width="99" height="115"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="99" id="V5G-PI-bQD"/>
                                     <constraint firstAttribute="height" constant="115" id="kVP-np-pG1"/>
@@ -43,8 +51,11 @@
                             <constraint firstAttribute="trailing" secondItem="WH7-cH-rCZ" secondAttribute="trailing" constant="24" id="KyG-JH-4dv"/>
                             <constraint firstItem="N2G-G8-ikS" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Tat-fx-Sz3"/>
                             <constraint firstItem="WH7-cH-rCZ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="39" id="jce-ZV-0bQ"/>
+                            <constraint firstAttribute="trailing" secondItem="tVy-wg-4xq" secondAttribute="trailing" id="lfF-yd-K0L"/>
                             <constraint firstItem="N2G-G8-ikS" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lm0-H4-mTK"/>
                             <constraint firstAttribute="bottom" secondItem="7Be-tm-mq9" secondAttribute="bottom" constant="11" id="ogZ-a6-EP1"/>
+                            <constraint firstItem="tVy-wg-4xq" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="pzW-Wl-vLh"/>
+                            <constraint firstItem="tVy-wg-4xq" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="w9u-XC-CzL"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -57,5 +68,8 @@
         <image name="background01" width="828" height="1450"/>
         <image name="bubbles_background" width="198" height="230"/>
         <image name="logo01" width="192" height="173"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

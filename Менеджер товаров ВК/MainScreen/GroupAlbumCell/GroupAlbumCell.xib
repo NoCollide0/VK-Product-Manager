@@ -10,9 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="albumCell" id="gTV-IL-0wX" customClass="GroupAlbumCell" customModule="Менеджер_товаров_ВК" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="albumCell" translatesAutoresizingMaskIntoConstraints="NO" id="gTV-IL-0wX" customClass="GroupAlbumCell" customModule="Менеджер_товаров_ВК" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
-            <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -62,6 +61,7 @@
             <constraints>
                 <constraint firstItem="YUf-4L-PMq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="O9k-d3-Hyh"/>
                 <constraint firstAttribute="trailing" secondItem="YUf-4L-PMq" secondAttribute="trailing" id="Tsw-Do-HNa"/>
+                <constraint firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="1:1" id="b68-Ah-5Wl"/>
                 <constraint firstAttribute="bottom" secondItem="YUf-4L-PMq" secondAttribute="bottom" id="beA-Ie-ln4"/>
                 <constraint firstItem="YUf-4L-PMq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gmU-Wk-PlU"/>
             </constraints>

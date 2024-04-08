@@ -99,11 +99,11 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
+                <constraint firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="5:6" id="1dQ-le-m1H"/>
                 <constraint firstItem="Lp2-JN-oHb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="26" id="34L-9O-Vnr"/>
                 <constraint firstAttribute="trailing" secondItem="Lp2-JN-oHb" secondAttribute="trailing" constant="26" id="7Z5-f2-fIV"/>
                 <constraint firstItem="Lp2-JN-oHb" firstAttribute="top" secondItem="PRL-x4-R88" secondAttribute="bottom" constant="11" id="Cs5-o5-fht"/>
-                <constraint firstAttribute="height" constant="240" id="F0T-So-uEH"/>
-                <constraint firstAttribute="width" constant="200" id="Nhl-1O-NeL"/>
+                <constraint firstAttribute="bottom" secondItem="gYl-4Y-PVi" secondAttribute="bottom" constant="1" id="G3P-C4-9bL"/>
                 <constraint firstAttribute="trailing" secondItem="gYl-4Y-PVi" secondAttribute="trailing" constant="26" id="Qt0-jV-CJQ"/>
                 <constraint firstItem="PRL-x4-R88" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="T8k-O4-TxN"/>
                 <constraint firstItem="gYl-4Y-PVi" firstAttribute="top" secondItem="Lp2-JN-oHb" secondAttribute="bottom" constant="4" id="aaC-9f-8lg"/>
@@ -124,6 +124,9 @@
             <point key="canvasLocation" x="0.0" y="-11.267605633802818"/>
         </collectionViewCell>
     </objects>
+    <designables>
+        <designable name="HKI-9N-4PB"/>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

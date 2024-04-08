@@ -171,13 +171,19 @@ class MainScreenViewController: UIViewController, UICollectionViewDataSource, UI
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let collectionViewWidth = collectionView.bounds.width
+        let spacingBetweenCells: CGFloat = 14
+        let numberOfCellsInRow: CGFloat = 2
+        let totalSpacing = (numberOfCellsInRow - 1) * spacingBetweenCells
+        let cellWidth = (collectionViewWidth - totalSpacing) / numberOfCellsInRow
+        
         if albumCheck == true {
-            return CGSize(width: 200, height: 200)
+            return CGSize(width: cellWidth, height: cellWidth)
         } else {
-            return CGSize(width: 200, height: 240)
+            let cellHeight = cellWidth * (240.0 / 200.0) // Сохраняем соотношение высоты к ширине
+            return CGSize(width: cellWidth, height: cellHeight)
         }
     }
-    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if albumCheck == true {
